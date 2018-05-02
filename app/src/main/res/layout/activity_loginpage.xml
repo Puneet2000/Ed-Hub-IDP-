@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bg1"
+    tools:context="com.example.puneetmangla.myapp.loginpage">
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="364dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username1" />
+
+    <Button
+        android:id="@+id/login2"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="188dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="44dp"
+        android:onClick="OnLogin"
+        android:text="Login"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="@dimen/default_bmb_buttonBottomMargin"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        tools:background="@android:color/holo_blue_bright"
+        tools:style="@android:style/Widget.Holo.Button.Borderless.Small" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="135dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Forgot password ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login2"
+        android:onClick="Forgot"/>
+
+</android.support.constraint.ConstraintLayout>

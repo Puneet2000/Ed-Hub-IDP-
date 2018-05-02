@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bg5"
+    tools:context="com.example.puneetmangla.myapp.Newslist">
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_highlightedColor="@color/Bg3"
+        app:bmb_normalColor="@color/Bg1" />
+
+    <ListView
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:background="@color/Bg2"
+        android:gravity="center"
+        android:text="News"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/holo_purple" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.puneetmangla.myapp.problemstatement"
+    android:background="@color/Bg7">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@color/Bg7"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/solstatement"
+        android:layout_width="350dp"
+        android:layout_height="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="120dp"
+        android:autoLink="web"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:backgroundTint="@color/default_bmb_shareLine1Color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/postsoln"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="500dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/name2"
+        android:background="@color/Bg9"
+        android:onClick="Postsoln"
+        android:text="Post Solution"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/name1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="90dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/viewsol"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+android:layout_marginTop="500dp"
+        android:layout_alignEnd="@+id/name1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Bg3"
+        android:onClick="Viewsoln"
+        android:text="View Solution"
+        android:textColor="@android:color/holo_green_dark" />
+</RelativeLayout>
+</ScrollView>

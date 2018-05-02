@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.puneetmangla.myapp.solutiontext"
+    android:background="@color/Bg9">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb8"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+android:layout_marginTop="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/pbname"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_highlightedColor="@color/Bg3"
+        app:bmb_normalColor="@color/Bg1"
+        android:layout_marginRight="15dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sad"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/solstatement"
+        android:layout_below="@+id/solstatement"
+        android:layout_marginTop="22dp"
+android:src="@drawable/bad1"
+        android:background="@color/Bg2"
+        android:backgroundTint="@color/Bg2"
+        android:onClick="Sad"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/satisfy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/satisfy1"
+        android:layout_alignTop="@+id/sad"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/sad"
+        android:backgroundTint="@color/Bg3"
+        android:onClick="Satisfy" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/happy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/satisfy"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/happy"
+        android:background="@android:color/holo_blue_dark"
+        android:backgroundTint="@android:color/holo_blue_dark"
+
+        android:onClick="Happy"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/veryhappy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/happy"
+android:src="@drawable/veryhappy"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@+id/best"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="Veryhappy" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/best"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/solstatement"
+        android:layout_alignTop="@+id/veryhappy"
+        android:src="@drawable/thumbs"
+        android:background="@android:color/holo_purple"
+        android:backgroundTint="@android:color/holo_purple"
+        android:onClick="Best" />
+
+    <TextView
+        android:id="@+id/pbname"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:background="@color/Bg2"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_purple" />
+
+    <TextView
+        android:id="@+id/solnby"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/solstatement"
+        android:layout_below="@+id/pbname"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:textColor="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/solstatement"
+        android:layout_width="350dp"
+        android:layout_height="360dp"
+        android:layout_below="@+id/solnby"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:ems="10"
+        android:textIsSelectable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:autoLink="web"/>
+
+
+
+</RelativeLayout>
+</ScrollView>

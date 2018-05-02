@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_white_24dp"
+
+        >
+
+
+    </item>
+
+    <item
+        android:id="@+id/Find"
+        android:title="Find People"></item>
+
+
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"></item>
+    <item
+        android:id="@+id/Info"
+        android:title="info"
+        android:icon="@drawable/ic_info_outline_white_24dp"></item>
+
+    <item
+        android:id="@+id/logout"
+        android:title="LogOut"></item>
+
+</menu>

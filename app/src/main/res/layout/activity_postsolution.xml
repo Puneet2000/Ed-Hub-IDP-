@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.puneetmangla.myapp.Postsolution"
+    android:background="@color/Bg3">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb3"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_highlightedColor="@color/Bg3"
+
+        app:bmb_normalColor="@color/Bg1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/solution"
+
+        android:layout_marginTop="440dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/postsol"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="450dp"
+        android:onClick="Post"
+        android:src="@drawable/posticon"
+         />
+
+    <TextView
+        android:id="@+id/Pbname"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Bg2"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+    <EditText
+        android:id="@+id/solution"
+        android:layout_width="348dp"
+        android:layout_height="344dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:ems="10"
+        android:autoLink="web"
+        android:inputType="textMultiLine"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="5dp"
+        />
+
+
+</RelativeLayout>
+</ScrollView>

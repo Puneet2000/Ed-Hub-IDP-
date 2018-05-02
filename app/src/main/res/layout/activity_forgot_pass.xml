@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bg4"
+    tools:context="com.example.puneetmangla.myapp.forgotPass">
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@color/Bg2"
+        android:text="OK"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:onClick="Getquestion"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:backgroundTint="@color/Bg8"
+        android:gravity="center"
+        android:text="your question?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@color/Bg2"
+        android:onClick="Submit"
+        android:text="submit"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp" />
+</RelativeLayout>

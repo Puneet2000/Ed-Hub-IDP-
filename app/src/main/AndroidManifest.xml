@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.puneetmangla.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".loginpage">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.loginpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registerpage">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.registerpage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".postproblem">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.postproblem" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".viewproblem">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.viewproblem" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".problemstatement">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.problemstatement" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Postsolution" />
+        <activity android:name=".Viewsolution">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.Viewsolution" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".solutiontext">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.solutiontext" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profilephoto" />
+        <activity android:name=".forgotPass">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.forgotPass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Changepass">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.Changepass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".settings">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.settings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Editpass">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.Editpass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changedp" />
+        <activity android:name=".changename">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.changename" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changebio">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.changepbio" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changepic">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.changepic" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".changeques">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.changeques" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".filterproblem" />
+        <activity android:name=".AddTag" />
+        <activity android:name=".Adduser" />
+        <activity android:name=".Viewprofile">
+            <intent-filter>
+                <action android:name="com.example.puneetmangla.myapp.Viewprofile" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".profilename" />
+        <activity android:name=".Postfeed" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Uploadimage" />
+        <activity android:name=".Newslist" />
+        <activity android:name=".viewnews" />
+        <activity android:name=".viewlinks" />
+        <activity android:name=".addlink"></activity>
+    </application>
+
+</manifest>

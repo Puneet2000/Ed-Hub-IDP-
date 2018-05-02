@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bg3"
+    tools:context="com.example.puneetmangla.myapp.Changepass">
+
+    <EditText
+        android:id="@+id/npass"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="133dp"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:paddingLeft="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/npass1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/npass1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="252dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/default_bmb_shareLine1Color"
+        android:ems="10"
+        android:hint="Confirm"
+        android:inputType="textPassword"
+        android:paddingLeft="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/npass" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="139dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/Bg8"
+        android:onClick="Set"
+        android:text="Set Password"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/npass1" />
+
+</android.support.constraint.ConstraintLayout>
